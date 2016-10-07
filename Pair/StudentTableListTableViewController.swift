@@ -86,14 +86,11 @@ class StudentTableListTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("studentCell", forIndexPath: indexPath)
-        let student = StudentController.sharedController.studentsToDisplay[indexPath.section]
+        let student = StudentController.sharedController.studentsToDisplay[indexPath.row]
         cell.textLabel?.text = student.name
         return cell
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Group \(section)"
-    }
 
     
     // Override to support editing the table view.

@@ -20,6 +20,9 @@ class StudentController {
     
     //create a computed property to hold retrieve the fetched students 
     
+    
+    var sections: [String] = ["XCode Article Repository", "My Pet App", "CellCheckUp"]
+    
     var fetchedStudentsFromCoreData: [Student] {
         //create an NS fetch request
         let request = NSFetchRequest(entityName: "Student")
@@ -29,6 +32,7 @@ class StudentController {
         return (try? moc.executeFetchRequest(request)) as? [Student] ?? [ ]
     }
     
+
     //create a function to add students. This will be called in the tableViewController UIAlert
     func addStudent(name: String, idea: String) {
         _ = Student(name: name, idea: idea)
