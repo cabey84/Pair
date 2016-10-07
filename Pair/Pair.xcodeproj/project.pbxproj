@@ -16,6 +16,7 @@
 		4B0393431DA7F2EE00D2C1E4 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0393411DA7F2EE00D2C1E4 /* Student+CoreDataProperties.swift */; };
 		4B0393441DA7F2EE00D2C1E4 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0393421DA7F2EE00D2C1E4 /* Student.swift */; };
 		4B0393461DA7F30E00D2C1E4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0393451DA7F30E00D2C1E4 /* Stack.swift */; };
+		4B0393491DA7F57A00D2C1E4 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0393481DA7F57A00D2C1E4 /* StudentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4B0393411DA7F2EE00D2C1E4 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B0393421DA7F2EE00D2C1E4 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		4B0393451DA7F30E00D2C1E4 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = "../../../Downloads/Task-master 3/Task/Stack.swift"; sourceTree = "<group>"; };
+		4B0393481DA7F57A00D2C1E4 /* StudentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StudentController.swift; path = ../StudentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,6 @@
 				4B03932C1DA7F22A00D2C1E4 /* AppDelegate.swift */,
 				4B03932E1DA7F22A00D2C1E4 /* ViewController.swift */,
 				4B0393301DA7F22A00D2C1E4 /* Main.storyboard */,
-				4B03933E1DA7F25A00D2C1E4 /* Student.xcdatamodeld */,
 				4B0393331DA7F22A00D2C1E4 /* Assets.xcassets */,
 				4B0393351DA7F22A00D2C1E4 /* LaunchScreen.storyboard */,
 				4B0393381DA7F22A00D2C1E4 /* Info.plist */,
@@ -80,9 +81,20 @@
 				4B0393411DA7F2EE00D2C1E4 /* Student+CoreDataProperties.swift */,
 				4B0393421DA7F2EE00D2C1E4 /* Student.swift */,
 				4B0393451DA7F30E00D2C1E4 /* Stack.swift */,
+				4B03933E1DA7F25A00D2C1E4 /* Student.xcdatamodeld */,
+				4B03934A1DA7F58900D2C1E4 /* Model Controller */,
 			);
 			name = Model;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		4B03934A1DA7F58900D2C1E4 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B0393481DA7F57A00D2C1E4 /* StudentController.swift */,
+			);
+			name = "Model Controller";
+			path = Pair;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B03932F1DA7F22A00D2C1E4 /* ViewController.swift in Sources */,
+				4B0393491DA7F57A00D2C1E4 /* StudentController.swift in Sources */,
 				4B03932D1DA7F22A00D2C1E4 /* AppDelegate.swift in Sources */,
 				4B0393431DA7F2EE00D2C1E4 /* Student+CoreDataProperties.swift in Sources */,
 				4B0393441DA7F2EE00D2C1E4 /* Student.swift in Sources */,
@@ -321,7 +334,8 @@
 				4B03933F1DA7F25A00D2C1E4 /* Student.xcdatamodel */,
 			);
 			currentVersion = 4B03933F1DA7F25A00D2C1E4 /* Student.xcdatamodel */;
-			path = Student.xcdatamodeld;
+			name = Student.xcdatamodeld;
+			path = Pair/Student.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
